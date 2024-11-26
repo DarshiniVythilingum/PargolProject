@@ -1,4 +1,4 @@
-package com.example.practicefinalproject.AdminDashboard;
+package com.example.practicefinalproj.AdminDashboard;
 
 import java.util.List;
 

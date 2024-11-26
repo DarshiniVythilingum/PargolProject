@@ -1,4 +1,4 @@
-package com.example.practicefinalproject.AdminDashboard;
+package com.example.practicefinalproj.AdminDashboard;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.practicefinalproject.R;
+import com.example.practicefinalproj.R;
 
 /**
  * A simple {@link Fragment} subclass.

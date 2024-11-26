@@ -1,14 +1,10 @@
-package com.example.practicefinalproject.ReaderDashboard;
+package com.example.practicefinalproj.ReaderDashboard;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.practicefinalproject.R;
+import com.example.practicefinalproj.R;
 
 public class ReaderDashboard extends AppCompatActivity {
 

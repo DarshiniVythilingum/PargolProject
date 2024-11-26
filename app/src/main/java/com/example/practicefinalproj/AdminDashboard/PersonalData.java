@@ -1,6 +1,5 @@
-package com.example.practicefinalproject.AdminDashboard;
+package com.example.practicefinalproj.AdminDashboard;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,12 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.practicefinalproject.ACLogin;
-import com.example.practicefinalproject.AdminCustRegis;
-import com.example.practicefinalproject.R;
+import com.example.practicefinalproj.R;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;

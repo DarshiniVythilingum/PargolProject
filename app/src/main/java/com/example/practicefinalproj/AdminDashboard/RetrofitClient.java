@@ -1,4 +1,4 @@
-package com.example.practicefinalproject.AdminDashboard;
+package com.example.practicefinalproj.AdminDashboard;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

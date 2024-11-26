@@ -1,4 +1,4 @@
-package com.example.practicefinalproject.AdminDashboard;
+package com.example.practicefinalproj.AdminDashboard;
 
 import android.os.Bundle;
 
@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.practicefinalproject.R;
+import com.example.practicefinalproj.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.practicefinalproject.AdminDashboard;
+package com.example.practicefinalproj.AdminDashboard;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.practicefinalproject.R;
+import com.example.practicefinalproj.R;
 
 import java.util.List;
 

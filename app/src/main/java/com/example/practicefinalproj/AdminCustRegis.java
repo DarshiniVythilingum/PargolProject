@@ -1,4 +1,4 @@
-package com.example.practicefinalproject;
+package com.example.practicefinalproj;
 
 //default imports
 import androidx.annotation.NonNull; //@NonNull inside firebase for registration.
@@ -19,8 +19,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 //I need the 2 following lines as my classes are in different packages/folder.
-import com.example.practicefinalproject.AdminDashboard.AdminDashboard;
-import com.example.practicefinalproject.ReaderDashboard.ReaderDashboard;
+import com.example.practicefinalproj.AdminDashboard.AdminDashboard;
+import com.example.practicefinalproj.ReaderDashboard.ReaderDashboard;
 
 import com.google.android.gms.tasks.OnCompleteListener; //Handling a Task<AuthResult> returned by Firebase authentication.
 import com.google.android.gms.tasks.Task; //Checking task.isSuccessful() after an authentication attempt.

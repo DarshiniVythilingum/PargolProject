@@ -1,12 +1,8 @@
-package com.example.practicefinalproject;
+package com.example.practicefinalproj;
 
 //default 6 imports
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 //new imports
 import android.app.DatePickerDialog;

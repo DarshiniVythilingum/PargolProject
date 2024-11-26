@@ -1,6 +1,4 @@
-package com.example.practicefinalproject.AdminDashboard;
-
-import static java.security.AccessController.getContext;
+package com.example.practicefinalproj.AdminDashboard;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,17 +7,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.practicefinalproject.ACLogin;
-import com.example.practicefinalproject.AdminCustRegis;
-import com.example.practicefinalproject.R;
+import com.example.practicefinalproj.ACLogin;
+import com.example.practicefinalproj.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;

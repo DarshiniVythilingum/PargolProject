@@ -1,4 +1,4 @@
-package com.example.practicefinalproject;
+package com.example.practicefinalproj;
 
 //default
 import android.os.Bundle;
@@ -16,8 +16,8 @@ import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Patterns;
 
-import com.example.practicefinalproject.AdminDashboard.AdminDashboard;
-import com.example.practicefinalproject.ReaderDashboard.ReaderDashboard;
+import com.example.practicefinalproj.AdminDashboard.AdminDashboard;
+import com.example.practicefinalproj.ReaderDashboard.ReaderDashboard;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
