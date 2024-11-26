@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Root/Parent Layout/Container with black background-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+<!-- Only Child LL: tVlogIn, Logo , eTemail. etpassword, btnAdmin, btnReader, btnRegister     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+<!--android:gravity="center" <- Child elements positioned in the centre.-->
+
+<!-- 1) TextView: Log In       -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            />
+
+<!-- 2) Logo       -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            />
+
+<!-- 3) eTemail -->
+        <EditText
+            android:id="@+id/eTemail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_frosted_background"
+            />
+
+<!-- 4) eTpassword -->
+        <EditText
+            android:id="@+id/eTpassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:background="@drawable/password_et"
+            />
+
+<!-- 5) btnLogIn -->
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#00FFFF"
+            android:layout_marginTop="25dp" />
+
+
+<!-- 6) btnRegister -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#FFCFF1"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

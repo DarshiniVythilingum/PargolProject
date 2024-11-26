@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/register"
+     >
+
+    <LinearLayout
+    android:layout_width="260dp"
+    android:layout_height="420dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="150dp"
+    android:background="#80F5F5F5"
+    >
+
+        <EditText
+            android:id="@+id/eTfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/eTlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/eTemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/eTpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/eTconfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/eTdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth: DD/MM/YY"
+            android:textSize="20dp"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:clickable="true"
+            />
+
+        <EditText
+            android:id="@+id/eTphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="10dp"
+        />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+</LinearLayout>

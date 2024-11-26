@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--1)  Search Bar Section with btnSearch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/eTSearchBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search reader by name"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnSearchReader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:backgroundTint="#2196F3"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <!-- 2) RecyclerView for Reader List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!--3) Button Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="20dp" />
+
+            <Button
+                android:id="@+id/btnBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Books"
+                android:backgroundTint="#F44336"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!--4) Info Section : Name, Email, DOB and phone number -->
+        <LinearLayout
+            android:id="@+id/llReaderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- Row 1: First Name -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="First Name:"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tVFirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text=""/>
+                </TableRow>
+
+                <!--Row 2: Last Name -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Last Name:"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tVLastName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text=""/>
+                </TableRow>
+
+                <!--Row 3: Email -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Email:"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tVEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text=""/>
+                </TableRow>
+
+                <!--Row 4: Date of Birth -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Date of Birth:"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvDob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text=""/>
+                </TableRow>
+
+                <!--Row 5: Phone Number -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Phone Number:"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tVPhoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+<!--        End of my info section / table          -->
+
+        <!--5) Books Section (Hidden unless activated by event) -->
+        <LinearLayout
+            android:id="@+id/booksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Borrowed Books:"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp" />
+
+            <!-- RecyclerView for Borrowed Books -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

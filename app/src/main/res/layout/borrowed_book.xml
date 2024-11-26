@@ -1,0 +1,29 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/tvReturnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Date: "
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tvRenewalCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of Renewals: "
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

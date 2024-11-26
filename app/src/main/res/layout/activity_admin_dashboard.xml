@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    1) LL of logo , admin name and btnLogout  -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#9C0AD1C7"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tVFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Log Out"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp" />
+
+</LinearLayout>
+
+<!--    2) LL row of 4 buttons : Info, Add, Edit and List Readers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add"
+            android:textStyle="bold"
+            android:backgroundTint="#8BC34A"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="10dp" />
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:textStyle="bold"
+            android:backgroundTint="#E567FB"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp" />
+
+        <!-- Reader Button -->
+        <Button
+            android:id="@+id/btnReader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Reader"
+            android:textStyle="bold"
+            android:backgroundTint="#FF5722"
+            android:textColor="@color/white"
+            android:padding="10dp" />
+
+        <!-- Personal Info Button -->
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Data"
+            android:textStyle="bold"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!--3)  Fragment Container -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:backgroundTint="#FFF9F7"
+    >
+
+<!--    LHS: Title, description, name -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingEnd="10dp">
+
+        <EditText
+            android:id="@+id/eTBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Title"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/eTBookDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Book Description"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+             />
+
+        <EditText
+            android:id="@+id/eTBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author Name"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- RHS : Picture -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="8dp">
+
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/uploadpic"
+            android:layout_marginTop="20dp"
+            android:background="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>
